@@ -29,28 +29,28 @@ function PointChange({}) {
                     </div>
                 </div>
                 <div className={style['list']}>
-                    <img src='/images/Point/section1.png' className={style['coin']} />
+                    <img src='/images/Point/section5.png' className={style['coin']} />
                     <div className={style['group']}>
                         <p className={style['txt']}>1700 포인트</p>
                         <p>CU | 농심 감자깡</p>
                     </div>
                 </div>
                 <div className={style['list']}>
-                    <img src='/images/Point/section2.png' className={style['coin']} />
+                    <img src='/images/Point/section6.png' className={style['coin']} />
                     <div className={style['group']}>
                         <p className={style['txt']}>2200 포인트</p>
                         <p>CU | 롯데 말랑카우 오리지널</p>
                     </div>
                 </div>
                 <div className={style['list']}>
-                    <img src='/images/Point/section1.png' className={style['coin']} />
+                    <img src='/images/Point/section7.png' className={style['coin']} />
                     <div className={style['group']}>
                         <p className={style['txt']}>1700 포인트</p>
                         <p>CU | 롯데 치토스 매운맛</p>
                     </div>
                 </div>
                 <div className={style['list']}>
-                    <img src='/images/Point/section2.png' className={style['coin']} />
+                    <img src='/images/Point/section8.png' className={style['coin']} />
                     <div className={style['group']}>
                         <p className={style['txt']}>1700 포인트</p>
                         <p>CU | 롯데 꼬깔콘 군옥수수맛</p>
