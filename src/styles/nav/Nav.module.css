@@ -1,0 +1,29 @@
+.nav {
+    bottom: 0;
+    width: 100vw;
+    height: 43px;
+    display: flex;
+    position: fixed;
+    column-gap: 40px;
+    margin-bottom: 29px;
+    justify-content: center;
+}
+
+.nav-list {
+    width: 45px;
+    row-gap: 7px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icon {
+    width: 25px;
+    height: 25px;
+    color: #BDBDBD;
+}
+
+.nav-text {
+    font-size: 8px;
+}
