@@ -64,4 +64,8 @@
     border-radius: 10px;
     color: white;
     background-color: var(--main-color);
+
+    font-family: var(--pretandard-font);
+    font-weight: var(--Medium);
+    font-size: 13px;
 }
