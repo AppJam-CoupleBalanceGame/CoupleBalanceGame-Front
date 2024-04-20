@@ -20,7 +20,7 @@
     justify-content: center;
 }
 
-p {
+.box > p {
     color: #FFF;
     font-family: 'SongMyung';
 }
