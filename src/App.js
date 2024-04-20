@@ -8,6 +8,10 @@ import Profile from './pages/ProfilePage';
 import CoupleInvite from './pages/CoupleInvitePage';
 import BalanceGame from './pages/BalanceGamePage';
 import BalanceGameTime from './pages/BalanceGameTime';
+import PointPay from './pages/PointPayPage';
+import Home from './pages/HomePage';
+import HomeOrder from './pages/HomeOrderPage';
+import HomeOrderFinish from './components/home/HomeOrderFinish';
 
 function App() {
   return(
@@ -24,6 +28,12 @@ function App() {
 
               <Route path='/balance-game' element={<BalanceGame />} />
               <Route path='/balance-game-time' element={<BalanceGameTime />} />
+
+              <Route path='/point-pay' element={<PointPay />} />
+
+              <Route path='/home' element={<Home />} />
+              <Route path='/home-order' element={<HomeOrder />} />
+              <Route path='/home-order-finish' element={<HomeOrderFinish />} />
           </Routes>
       </Router>
   )
