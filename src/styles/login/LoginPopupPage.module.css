@@ -2,7 +2,13 @@
     width: 100vw;
     height: 100vh;
     display: flex;
+    position: fixed;
+    overflow: hidden;
     flex-direction: column;
+}
+
+.container::-webkit-scrollbar {
+    display: none;
 }
 
 .body {
@@ -10,15 +16,22 @@
 }
 
 .question {
-    font-family: var(--pretandard-font);
     font-size: 18px;
-    font-weight: var(--Bold);
     margin-bottom: 18px;
+    font-weight: var(--Bold);
+    font-family: var(--pretandard-font);
 }
 
 .answer {
     opacity: 0.5;
-    font-family: var(--pretandard-font);
     font-size: 13px;
     font-weight: var(--Light);
+    font-family: var(--pretandard-font);
+}
+
+.talk {
+    bottom: 0;
+    width: 49px;
+    height: 49px;
+    margin: 422px 17px 37px 294px;
 }

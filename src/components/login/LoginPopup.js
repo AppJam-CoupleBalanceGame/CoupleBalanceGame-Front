@@ -17,6 +17,9 @@ function LoginPopup() {
                         채팅 문의를 통해 연락주시오!
                     </p>
                 </div>
+                <div className={loginStyle['footer']}>
+                    <img src='/images/Login/talk.png' className={loginStyle['talk']} />
+                </div>
             </div>
         </>
     )

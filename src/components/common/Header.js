@@ -9,7 +9,7 @@ function Header({ text }) {
     return (
         <>
             <div className={style['header']}>
-                <Link to="/login"> <FaArrowLeft className={style['left-icon']} /> </Link>
+                <Link to="/login" style={{textDecoration: 'none', color: 'black'}}> <FaArrowLeft className={style['left-icon']} /> </Link>
                 <p className={style['title']}>{text}</p>
             </div>
         </>
