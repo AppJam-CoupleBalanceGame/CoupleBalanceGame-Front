@@ -1,6 +1,8 @@
 @import url("https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/static/pretendard.min.css");
 
 :root {
+    --main-color: #FF90BC;
+
     --pretandard-font: 'Pretendard';
 
     --ExtraBold: 800;
