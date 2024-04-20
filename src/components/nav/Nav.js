@@ -8,7 +8,7 @@ function Nav() {
         <div className={navStyle['nav']}>
             <Link to='/room-custom' style={{ textDecoration: 'none', color: 'black'}}>
                 <div className={window.location.pathname!=='/room-custom' ? navStyle['nav-list'] : navStyle['select-nav-list']}>
-                    {window.location.pathname!=='/room-custom' ? <img src='/images/Nav/custom.svg' className={navStyle['icon']} /> : <img src='/images/Nav/custom.svg' className={navStyle['icon']} />}
+                    {window.location.pathname!=='/room-custom' ? <img src='/images/Nav/custom.svg' className={navStyle['icon']} /> : <img src='/images/Nav/selectCustom.svg' className={navStyle['icon']} />}
                     <p className={navStyle['nav-text']}>방 꾸미기</p>
                 </div>
             </Link>
