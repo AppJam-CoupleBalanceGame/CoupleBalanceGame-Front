@@ -1,8 +1,5 @@
 import '../../styles/common/Style.css'
 import navStyle from '../../styles/nav/Nav.module.css'
-import { HiPaintBrush } from "react-icons/hi2";
-import { AiOutlineHome } from "react-icons/ai";
-import { IoPerson } from "react-icons/io5"
 
 function Nav() {
     return (

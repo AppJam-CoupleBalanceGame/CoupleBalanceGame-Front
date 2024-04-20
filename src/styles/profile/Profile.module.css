@@ -1,0 +1,51 @@
+.profile {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.couple-name {
+    height: 40px;
+    display: flex;
+    margin: 0 79px;
+    margin-top: 61px;
+    align-items: center;
+    width: calc(100% - 79px);
+    justify-content: space-around;
+}
+
+.heart {
+    width: 50px;
+    height: 40px;
+}
+
+.nickname-1,
+.nickname-2 {
+    opacity: 0.64px;
+    font-size: 16px;
+    font-weight: var(--ExtraBold);
+}
+
+.day-text {
+    font-size: 12px;
+    margin-top: 13px;
+    margin: 13px 0 46px 0;
+}
+
+.character {
+    width: 40px;
+    height: 40px;
+}
+
+.profile-button {
+    width: 287px;
+    height: 313px;
+    display: flex;
+    row-gap: 15px;
+    align-items: center;
+    flex-direction: column;
+    margin: 46px 0 86px 0;
+    justify-content: center;
+}
