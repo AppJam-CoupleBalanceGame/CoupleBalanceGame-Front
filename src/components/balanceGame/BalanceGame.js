@@ -4,6 +4,7 @@ import style from '../../styles/balanceGame/BalanceGame.module.css';
 import Header from '../common/Header';
 import BalanceQuestion from './BalanceQuestion';
 import BalanceAnswer from './BalanceAnswer';
+import Nav from '../nav/Nav';
 
 function BalanceGame() {
     return (
@@ -17,6 +18,7 @@ function BalanceGame() {
                     <button>다음</button>
                 </div>
             </div>
+            <Nav />
         </>
     )
 }
