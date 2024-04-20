@@ -16,8 +16,9 @@
 }
 
 .title {
+    font-family: var(--pretandard-font);
     font-size: 18px;
-    font-weight: bold;
+    font-weight: var(--Bold);
 }
 
 .body {
@@ -25,13 +26,15 @@
 }
 
 .question {
+    font-family: var(--pretandard-font);
     font-size: 18px;
-    font-weight: bold;
+    font-weight: var(--Bold);
     margin-bottom: 18px;
 }
 
 .answer {
-    opacity: 0.34;
+    opacity: 0.5;
+    font-family: var(--pretandard-font);
     font-size: 13px;
-    font-weight: light;
+    font-weight: var(--Light);
 }

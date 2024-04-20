@@ -1,0 +1,50 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.googleButtonDiv,
+.kakaoButtonDiv,
+.eleganceButtonDiv {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.googleButton,
+.kakaoButton {
+    width: 80%;
+    padding: 4%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 6px;
+    background-color: white;
+    color: rgba(0, 0, 0, 0.6);
+
+    font-family: var(--pretandard-font);
+    font-weight: var(--SemiBold);
+    font-size: 13px;
+}
+
+.eleganceButton {
+    width: 80%;
+    padding: 4%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 6px;
+    background-color: white;
+    color: rgba(0, 0, 0, 0.2);
+
+    font-family: var(--pretandard-font);
+    font-weight: var(--SemiBold);
+    font-size: 13px;
+}
