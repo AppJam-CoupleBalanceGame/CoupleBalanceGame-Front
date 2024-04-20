@@ -1,12 +1,15 @@
 import '../../styles/common/Style.css'
 import loginStyle from '../../styles/login/LoginPopupPage.module.css'
+
+import { Link } from 'react-router-dom';
+
 import { FaArrowLeft } from "react-icons/fa6";
 
 function LoginPopup() {
     return (
         <div className={loginStyle['container']}>
             <div className={loginStyle['header']}>
-                <FaArrowLeft className={loginStyle['left-icon']} />
+                <Link to="/login"> <FaArrowLeft className={loginStyle['left-icon']} /> </Link>
                 <p className={loginStyle['title']}>고객센터</p>
             </div>
             <div className={loginStyle['body']}>
