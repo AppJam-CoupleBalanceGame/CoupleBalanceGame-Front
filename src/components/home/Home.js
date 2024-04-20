@@ -44,7 +44,7 @@ function Home() {
                 <MdOutlineAccessTimeFilled className={style['watch']} />
                 <p>다음 퀴즈까지 <span className={style['time']}>{String(remainingMinutes).padStart(2, '0')}:{String(remainingSeconds).padStart(2, '0')}</span></p>
             </div>
-            <img src='/images/Login/talk.png' className={style['img']} />
+            <img src='/images/Home/main.png' className={style['img']} />
             <Nav />
         </div>
     );

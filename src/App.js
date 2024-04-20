@@ -1,6 +1,5 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Splash from './pages/SplashPage';
 import Login from './pages/LoginPage';
 import LoginPopup from './pages/LoginPopupPage';
 import ProfileSetting from './pages/ProfileSettingPage';
@@ -17,8 +16,7 @@ function App() {
   return(
       <Router>
           <Routes>
-              <Route path="/" element={<Splash />}/>
-              <Route path="/login" element={<Login />}/>
+              <Route path="/" element={<Login />}/>
               <Route path="/loginPopup" element={<LoginPopup />} />
 
               <Route path="/profile-setting" element={<ProfileSetting />} />
