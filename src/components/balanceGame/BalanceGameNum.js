@@ -5,7 +5,7 @@ import Header from '../common/Header';
 import Nav from '../nav/Nav';
 import { Link } from 'react-router-dom';
 
-function BalanceGame3() {
+function BalanceGameNum() {
     return (
         <>
             <Link to="/balance-game-before" style={{textDecoration: 'none', color: 'black'}}><Header /></Link>
@@ -32,4 +32,4 @@ function BalanceGame3() {
     )
 }
 
-export default BalanceGame3;
+export default BalanceGameNum;
