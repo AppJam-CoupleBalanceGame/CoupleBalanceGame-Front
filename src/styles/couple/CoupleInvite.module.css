@@ -1,0 +1,66 @@
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 170px;
+}
+
+.topContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 36px;
+    margin-top: 20%;
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 12px;
+}
+
+.textDiv1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: var(--pretandard-font);
+    font-weight: var(--Bold);
+    font-size: 20px;
+}
+
+.textDiv2 {
+    font-family: var(--pretandard-font);
+    font-weight: var(--Regular);
+    font-size: 14px;
+    opacity: 0.4;
+}
+
+.buttonContainer {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    border: 0;
+    border-radius: 10px;
+    row-gap: 10px;
+}
+.buttonContainer > button {
+    width: 100%;
+    padding: 5%;
+    border: 0;
+    border-radius: 10px;
+    color: white;
+
+    font-family: var(--pretandard-font);
+    font-weight: var(--Medium);
+    font-size: 13px;
+}
+.buttonContainer > button:nth-child(1) {
+    background-color: var(--main-color);
+}
+.buttonContainer > button:nth-child(2) {
+    border-color: var(--main-color);
+    background-color: var(--sub-color);
+    color: var(--main-color);
+}
