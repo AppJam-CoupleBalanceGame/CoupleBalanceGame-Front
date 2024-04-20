@@ -5,22 +5,6 @@
     flex-direction: column;
 }
 
-.header {
-    display: flex;
-    column-gap: 89px;
-    margin: 57px 0 75px 36px;
-}
-
-.left-icon {
-    font-size: 24px;
-}
-
-.title {
-    font-family: var(--pretandard-font);
-    font-size: 18px;
-    font-weight: var(--Bold);
-}
-
 .body {
     margin-left: 36px;
 }
