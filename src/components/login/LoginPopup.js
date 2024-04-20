@@ -1,17 +1,12 @@
 import '../../styles/common/Style.css'
 import loginStyle from '../../styles/login/LoginPopupPage.module.css'
 
-import { Link } from 'react-router-dom';
-
-import { FaArrowLeft } from "react-icons/fa6";
+import Header from '../common/Header';
 
 function LoginPopup() {
     return (
         <div className={loginStyle['container']}>
-            <div className={loginStyle['header']}>
-                <Link to="/login"> <FaArrowLeft className={loginStyle['left-icon']} /> </Link>
-                <p className={loginStyle['title']}>고객센터</p>
-            </div>
+            <Header text={('고객센터')}/>
             <div className={loginStyle['body']}>
                 <p className={loginStyle['question']}>Q. 이미 계정이 있는데 어떡하오?</p>
                 <p className={loginStyle['answer']}>
