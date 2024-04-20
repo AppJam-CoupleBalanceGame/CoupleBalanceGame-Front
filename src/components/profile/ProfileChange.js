@@ -1,12 +1,12 @@
 import '../../styles/common/Style.css';
-import style from '../../styles/profile/ProfileSetting.module.css';
+import style from '../../styles/profile/ProfileChange.module.css';
 
-import Header from '../common/Header';
+import CoinBar from '../common/Coin-Bar';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 import { useState } from 'react';
 
-function ProfileSetting() {
+function ProfileChange() {
     const [isBirthCalendarOpen, setIsBirthCalendarOpen] = useState(false);
     const [birthDate, setBirthDate] = useState(null);
     
@@ -35,8 +35,8 @@ function ProfileSetting() {
 
     return (
         <>
-            <Header text={'프로필 설정'} />
             <div className={style['container']}>
+                <CoinBar text={(350)} />
                 <div className={style['textContainer']}>
                     <div className={style['nickName']}>
                         <p>별명</p>
@@ -74,4 +74,4 @@ function ProfileSetting() {
     )
 }
 
-export default ProfileSetting;
+export default ProfileChange;
