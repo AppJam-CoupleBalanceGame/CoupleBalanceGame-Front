@@ -21,7 +21,7 @@ function Profile() {
 
             <div className={profileStyle['profile-button']}>
                 <Link to="/profile-change" style={{textDecoration: 'none', color: 'black'}}><ButtonGray text={('프로필 수정')} /></Link>
-                <Link to="/time-setting" style={{textDecoration: 'none', color: 'black'}}><ButtonGray text={('밸런스게임 시간 설정')} /></Link>
+                <Link to="/balance-game-time" style={{textDecoration: 'none', color: 'black'}}><ButtonGray text={('밸런스게임 시간 설정')} /></Link>
                 <ButtonGray text={('엘레강스 커플에 문의하기')} />
                 <ButtonGray text={('알림 설정')} />
                 <ButtonGray text={('법률정보')} />

@@ -18,12 +18,31 @@
     flex-direction: column;
 }
 
-.icon {
+.nav-list > .icon {
     width: 25px;
     height: 25px;
     color: #BDBDBD;
 }
 
-.nav-text {
+.nav-list > .nav-text {
     font-size: 8px;
+}
+
+.select-nav-list {
+    width: 45px;
+    row-gap: 7px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+.select-nav-list > .icon {
+    width: 25px;
+    height: 25px;
+    color: var(--main-color);
+}
+
+.select-nav-list > .nav-text {
+    font-size: 8px;
+    color: var(--main-color);
 }
