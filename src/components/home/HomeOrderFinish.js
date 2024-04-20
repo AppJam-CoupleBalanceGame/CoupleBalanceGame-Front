@@ -28,7 +28,7 @@ function HomeOrderFinish() {
                     <p>{productPrice} 포인트가 추가되었습니다</p>
                 </div>
 
-                <Link to='/home' style={{ display: 'flex', textDecoration: 'none', color: 'black', width: '80%', justifyContent: 'center', alignItems: 'center' }}>
+                <Link to='/point2' style={{ display: 'flex', textDecoration: 'none', color: 'black', width: '80%', justifyContent: 'center', alignItems: 'center' }}>
                     <div className={style['button']}>
                         <button>확인</button>
                     </div>
