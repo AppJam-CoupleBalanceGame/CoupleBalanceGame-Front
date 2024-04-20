@@ -2,7 +2,7 @@ import '../../styles/common/Style.css';
 import style from '../../styles/balanceGame/BalanceAnswer.module.css';
 import { useState } from 'react';
 
-function BalanceAnswer({ oneAnswer, twoAnswer }) {
+function BalanceAnswer({ firstOption, secondOption }) {
     const [select, setSelect] = useState("");
 
     const handleSelect = (text) => {
@@ -17,15 +17,14 @@ function BalanceAnswer({ oneAnswer, twoAnswer }) {
         <>
             <div className={style['container']}>
                 <div className={`${style['oneAnswer']} ${select === 'oneAnswer' ? style['changeAnswer'] : style['oneAnswer']}`} onClick={() => handleSelect('oneAnswer')}>
-                    <input type="button" value={oneAnswer} />
+                    <input type="button" value={firstOption} />
                 </div>
 
                 <div className={`${style['twoAnswer']} ${select === 'twoAnswer' ? style['changeAnswer'] : style['twoAnswer']}`} onClick={() => handleSelect('twoAnswer')}>
-                    <input type="button" value={twoAnswer} />
+                    <input type="button" value={secondOption} />
                 </div>
             </div>
         </>
     )
 }
-
 export default BalanceAnswer;
