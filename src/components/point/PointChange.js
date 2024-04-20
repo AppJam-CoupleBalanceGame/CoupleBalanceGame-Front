@@ -10,7 +10,7 @@ function PointChange({}) {
 
     return (
         <>
-            <Link to={'/point'} style={{textDecoration: 'none', color: 'black'}}><Header text={('포인트')} /></Link>
+            <Link to={'/point2'} style={{textDecoration: 'none', color: 'black'}}><Header text={('포인트')} /></Link>
             <hr style={{ marginTop: '-13%', borderWidth: '2px', border: '1px solid #D9D9D9' }}/>
             <div className={style['container']}>
                 <p className={style['text']}>포인트로 교환하기</p>
