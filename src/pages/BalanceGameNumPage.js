@@ -1,4 +1,4 @@
-import BalanceGameNum from "../components/balanceGame/BalanceGame-Num";
+import BalanceGameNum from "../components/balanceGame/BalanceGameNum";
 
 function BalanceGameNumPage() {
     return (

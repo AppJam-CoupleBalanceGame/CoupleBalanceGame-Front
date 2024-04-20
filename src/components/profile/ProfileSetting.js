@@ -5,6 +5,7 @@ import Header from '../common/Header';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function ProfileSetting() {
     const [isBirthCalendarOpen, setIsBirthCalendarOpen] = useState(false);
@@ -33,6 +34,31 @@ function ProfileSetting() {
         setIsStartDateCalendarOpen(false);
     }
 
+    const [nickname, setNickname] = useState('');
+
+    const handleConfirmation = async () => {
+        try {
+            const response = await fetch('http://localhost:8080/user/info/add', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    nickname: nickname,
+                }),
+            });
+    
+            if (!response.ok) {
+                throw new Error('Failed to add user information');
+            }
+    
+            const responseData = await response.json();
+            console.log(responseData);
+        } catch (error) {
+            console.log(error);
+        }
+    };
+
     return (
         <>
             <Header text={'프로필 설정'} />
@@ -40,7 +66,12 @@ function ProfileSetting() {
                 <div className={style['textContainer']}>
                     <div className={style['nickName']}>
                         <p>별명</p>
-                        <input type='text' placeholder='별명을 입력해주세요.'/>
+                        <input 
+                            type='text' 
+                            placeholder='별명을 입력해주세요.'
+                            value={nickname}
+                            onChange={(e) => setNickname(e.target.value)}
+                        />
                     </div>
 
                     <div className={style['birth']} onClick={handleBirthClick}>
@@ -66,9 +97,11 @@ function ProfileSetting() {
                     )}
                 </div>
 
-                <div className={style['buttonContainer']}>
-                    <button>확인</button>
-                </div>
+                <Link to="/home" style={{ display: 'flex', textDecoration: 'none', color: 'black', width: '100%', justifyContent: 'center', alignItems: 'center' }}>
+                    <div className={style['buttonContainer']}>
+                        <button onClick={handleConfirmation}>확인</button>
+                    </div>
+                </Link>
             </div>
         </>
     )

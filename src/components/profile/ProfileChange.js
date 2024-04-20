@@ -32,6 +32,7 @@ function ProfileChange() {
         setStartDate(date);
         setIsStartDateCalendarOpen(false);
     }
+    
 
     return (
         <>
@@ -40,12 +41,20 @@ function ProfileChange() {
                 <div className={style['textContainer']}>
                     <div className={style['nickName']}>
                         <p>별명</p>
-                        <input type='text' placeholder='별명을 입력해주세요.'/>
+                        <input 
+                            type='text' 
+                            placeholder='별명을 입력해주세요.'                  
+                        />
                     </div>
 
                     <div className={style['birth']} onClick={handleBirthClick}>
                         <p>생년월일</p>
-                        <input type='text' placeholder='생년월일을 입력해주세요.' value={birthDate instanceof Date ? birthDate.toLocaleDateString() : ''} readOnly/>
+                        <input 
+                            type='text' 
+                            placeholder='생년월일을 입력해주세요.' 
+                            value={birthDate instanceof Date ? birthDate.toLocaleDateString() : ''}
+                            readOnly  
+                        />
                     </div>
 
                     {isBirthCalendarOpen && (
@@ -56,7 +65,12 @@ function ProfileChange() {
 
                     <div className={style['date']} onClick={handleStartDateClick}>
                         <p>사귀기 시작한 날짜</p>
-                        <input type='text' placeholder='날짜를 입력해주세요.' value={startDate instanceof Date ? startDate.toLocaleDateString() : ''} readOnly/>
+                        <input 
+                            type='text' 
+                            placeholder='날짜를 입력해주세요.' 
+                            value={startDate instanceof Date ? startDate.toLocaleDateString() : ''} 
+                            readOnly
+                        />
                     </div>
 
                     {isStartDateCalendarOpen && (
