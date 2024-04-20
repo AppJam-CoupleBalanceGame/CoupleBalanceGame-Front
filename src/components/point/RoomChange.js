@@ -10,7 +10,7 @@ function RoomChange() {
 
     return (
         <>
-            <Link to={'/point'} style={{textDecoration: 'none', color: 'black'}}><Header text={('코인')} /></Link>
+            <Link to={'/point2'} style={{textDecoration: 'none', color: 'black'}}><Header text={('코인')} /></Link>
             <hr style={{ marginTop: '-13%', borderWidth: '2px', border: '1px solid #D9D9D9' }}/>
             <div className={style['container']}>
                 <p className={style['text']}>방 꾸미기 아이템 교환하기</p>

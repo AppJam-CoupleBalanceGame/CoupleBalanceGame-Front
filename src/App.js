@@ -20,6 +20,8 @@ import Bell from './pages/BellPage';
 import CoupleJoin from './pages/CoupleJoinPage';
 import Point from './pages/PointPage';
 import Point2 from  './pages/PointPage2';
+import PointChange from './pages/PointChangePage';
+import RoomChange from './pages/RoomChangePage';
 
 function App() {
   return(
@@ -53,6 +55,9 @@ function App() {
 
           <Route path='/point' element={<Point />}/>
           <Route path='/point2' element={<Point2 />}/>
+
+          <Route path='/point-change' element={<PointChange />} />
+          <Route path='/room-change' element={<RoomChange />} />
       </Routes>
   </Router>
   )
