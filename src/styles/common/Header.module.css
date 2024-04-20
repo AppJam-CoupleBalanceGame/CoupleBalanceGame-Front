@@ -1,15 +1,20 @@
 .header {
     display: flex;
-    column-gap: 89px;
-    margin: 13px 0 75px 36px;
+    /* column-gap: 89px; */
+    margin-top: 5%;
+    margin-bottom: 75px;
+    align-items: center;
 }
 
 .left-icon {
+    margin-left: 5%;
     font-size: 24px;
 }
 
 .title {
+    width: calc(85% - 24px);
     font-family: var(--pretandard-font);
     font-size: 18px;
     font-weight: var(--Bold);
+    text-align: center;
 }
