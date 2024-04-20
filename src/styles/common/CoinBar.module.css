@@ -1,0 +1,32 @@
+.coin-bar {
+    width: 310px;
+    height: 35px;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box {
+    display: flex;
+    column-gap: 5px;
+}
+
+.coin {
+    width: 26px;
+    height: 26px;    
+}
+
+.title {
+    color: #777777;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: var(--Bold);
+}
+
+.bell {
+    width: 24px;
+    height: 25px;
+    color: #BDBDBD;
+}
