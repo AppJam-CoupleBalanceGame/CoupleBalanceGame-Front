@@ -6,7 +6,7 @@ function Splash() {
         <div className={splashStyle['container']}>
             <div className={splashStyle['box']}>
                 <p className={splashStyle['title']}>엘레강스 커플</p>
-                <p className={splashStyle['subtitle']}>하나. 우리는 엘레강스한 지성인이다.</p>
+                <p className={splashStyle['subtitle']}>우리는 엘레강스한 지성인이다.</p>
             </div>
         </div>
     )
