@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 25px;
+    margin-top: 50%;
+}
+
+.buttonContainer {
+    display: flex;
+    width: 80%;
+    border: 0;
+    border-radius: 10px;
+    margin-top: 7%;
+}
+.buttonContainer > button {
+    width: 100%;
+    padding: 5%;
+    border: 0;
+    border-radius: 10px;
+    color: white;
+    background-color: var(--accent-color);
+
+    font-family: var(--pretandard-font);
+    font-weight: var(--Medium);
+    font-size: 13px;
+}

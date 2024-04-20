@@ -1,0 +1,12 @@
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container > p {
+    font-family: var(--pretandard-font);
+    font-weight: var(--SemiBold);
+    font-size: 20px;
+}
