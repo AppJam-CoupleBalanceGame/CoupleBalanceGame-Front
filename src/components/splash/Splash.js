@@ -1,7 +1,16 @@
 import '../../styles/common/Style.css'
 import splashStyle from '../../styles/splash/SplashPage.module.css'
 
+import { useEffect } from 'react';
+
 function Splash() {
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            window.location.href = '/login';
+        }, 3000);
+        return () => clearTimeout(timer);
+    }, []);
+
     return (
         <div className={splashStyle['container']}>
             <div className={splashStyle['box']}>
