@@ -6,7 +6,7 @@ import Header from '../common/Header';
 import { Link } from 'react-router-dom';
 import { BsArrowRight } from "react-icons/bs";
 
-function Point({text}) {
+function Point2({text}) {
 
     return (
         <>
@@ -15,7 +15,7 @@ function Point({text}) {
             <div className={style['container']}>
                 <div className={style['head']}>
                     <Link to={'/point-pay'}><img src='/images/Nav/coin.png' className={style['coin']} /></Link>
-                    <p className={style['title']}>{350}</p>
+                    <p className={style['title']}>{1350}</p>
                 </div>
 
                 <div className={style['body']}>
@@ -66,5 +66,5 @@ function Point({text}) {
     )
 }
 
-export default Point;
+export default Point2;
 
