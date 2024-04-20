@@ -17,7 +17,6 @@ function Profile() {
                 <p className={profileStyle['nickname-2']}>최엘레강스</p>
             </div>
             <p className={profileStyle['day-text']}>사귄지 <span className={profileStyle['day']}>100</span>일</p>
-            <img src='/images/Profile/heart.png' className={profileStyle['character']} />
 
             <div className={profileStyle['profile-button']}>
                 <Link to="/profile-change" style={{textDecoration: 'none', color: 'black'}}><ButtonGray text={('프로필 수정')} /></Link>

@@ -5,6 +5,7 @@ import CoinBar from '../common/Coin-Bar';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function ProfileChange() {
     const [isBirthCalendarOpen, setIsBirthCalendarOpen] = useState(false);
@@ -80,9 +81,11 @@ function ProfileChange() {
                     )}
                 </div>
 
-                <div className={style['buttonContainer']}>
-                    <button>확인</button>
-                </div>
+                <Link to="/profile" style={{ display: 'flex', textDecoration: 'none', color: 'black', width: '100%', justifyContent: 'center', alignItems: 'center' }}>
+                    <div className={style['buttonContainer']}>
+                        <button>확인</button>
+                    </div>
+                </Link>
             </div>
         </>
     )

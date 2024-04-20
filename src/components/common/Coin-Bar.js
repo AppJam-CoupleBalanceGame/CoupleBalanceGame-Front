@@ -2,6 +2,7 @@ import '../../styles/common/Style.css';
 import CoinBarstyle from '../../styles/common/CoinBar.module.css';
 
 import { HiMiniBell } from "react-icons/hi2";
+import { Link } from 'react-router-dom';
 
 function Header({ text }) {
     return (
@@ -11,7 +12,9 @@ function Header({ text }) {
                     <img src='/images/Nav/coin.png' className={CoinBarstyle['coin']} />
                     <p className={CoinBarstyle['title']}>{text}</p>
                 </div>
-                <HiMiniBell className={CoinBarstyle['bell']} />
+                <Link to="/bell">
+                    <HiMiniBell className={CoinBarstyle['bell']} />
+                </Link>
             </div>
         </>
     )

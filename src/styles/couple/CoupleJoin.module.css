@@ -20,6 +20,7 @@ input {
     border-radius: 5px;
     padding-left: 21px;
     border: 1px solid #FF90BC;
+    outline: none;
 }
 
 .buttonContainer {
