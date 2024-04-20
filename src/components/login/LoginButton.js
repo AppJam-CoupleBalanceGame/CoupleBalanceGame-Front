@@ -7,7 +7,7 @@ function LoginButton() {
     return (
         <>
             <div className={style['container']}>
-                <Link to="/home" style={{ textDecoration: 'none', color: 'black' }}>
+                <Link to="/couple-invite" style={{ textDecoration: 'none', color: 'black' }}>
                     <div className={style['googleButtonDiv']}>
                         <button className={style['googleButton']}> <Icon icon="flat-color-icons:google" /> Google로 여정을 시작하겠소</button>
                     </div>

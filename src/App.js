@@ -14,12 +14,18 @@ import Home from './pages/HomePage';
 import HomeOrder from './pages/HomeOrderPage';
 import HomeOrderFinish from './pages/HomeOrderFinishPage';
 import BalanceGameNum from './pages/BalanceGameNumPage';
+import RoomCustom from './pages/RoomCustomPage';
+import RoomCustomChange from './pages/RoomChangePage';
+import Bell from './pages/BellPage';
+import CoupleJoin from './pages/CoupleJoinPage';
+import Point from './pages/PointPage';
+import Point2 from  './pages/PointPage2';
 
 function App() {
   return(
     <Router>
       <Routes>
-          <Route path="/login" element={<Login />}/>
+          <Route path="/" element={<Login />}/>
           <Route path="/loginPopup" element={<LoginPopup />} />
 
           <Route path="/profile-setting" element={<ProfileSetting />} />
@@ -27,6 +33,7 @@ function App() {
           <Route path='/profile-change' element={<ProfileChange />} />
           
           <Route path="/couple-invite" element={<CoupleInvite />} />
+          <Route path='/couple-join' element={<CoupleJoin />} />
 
           <Route path='/balance-game' element={<BalanceGame />} />
           <Route path='/balance-game-time' element={<BalanceGameTime />} />
@@ -38,6 +45,14 @@ function App() {
           <Route path='/home' element={<Home />} />
           <Route path='/home-order' element={<HomeOrder />} />
           <Route path='/home-order-finish' element={<HomeOrderFinish />} />
+
+          <Route path='/room-custom' element={<RoomCustom/>} />
+          <Route path='/room-change-custom' element={<RoomCustomChange />} />
+
+          <Route path='/bell' element={<Bell />} />
+
+          <Route path='/point' element={<Point />}/>
+          <Route path='/point2' element={<Point2 />}/>
       </Routes>
   </Router>
   )

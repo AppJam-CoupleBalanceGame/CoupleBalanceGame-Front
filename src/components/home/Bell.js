@@ -22,7 +22,7 @@ function Bell() {
                     <img src='/images/Login/setting.svg' className={style['setting']} />
                     <p className={style['title']}>시스템</p>
                 </div>
-                <p className={style['subtitle']}><span className={style['couple-name']}></span>님과 커플이 연결되셨어요!</p>
+                <p className={style['subtitle']}><span className={style['couple-name']}></span>김엘레강스님과 커플이 연결되셨어요!</p>
             </div>
             <div className={style['box']}>
                 <div className={style['content']}>

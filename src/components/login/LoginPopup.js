@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 function LoginPopup() {
     return (
         <>
-            <Link to={'/login'} style={{textDecoration: 'none', color: 'black'}}><Header text={('고객센터')}/></Link>
+            <Link to={'/'} style={{textDecoration: 'none', color: 'black'}}><Header text={('고객센터')}/></Link>
             <div className={loginStyle['container']}>
                 <div className={loginStyle['body']}>
                     <p className={loginStyle['question']}>Q. 이미 계정이 있는데 어떡하오?</p>

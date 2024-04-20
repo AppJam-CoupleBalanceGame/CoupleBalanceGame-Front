@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import '../../styles/common/Style.css';
 import style from '../../styles/couple/CoupleInvite.module.css';
 
@@ -23,7 +24,9 @@ function CoupleInvite() {
 
                 <div className={style['buttonContainer']}>
                     <button>애인 초대하기</button>
-                    <button>애인에게 초대받기</button>
+                    <Link to="/couple-join" style={{ textDecoration: 'none', color: 'black', display: 'flex', width: '100%', justifyContent: 'center', alignItems: 'center' }}>
+                        <button className={style['button']}>애인에게 초대받기</button>
+                    </Link>
                 </div>
             </div>
         </>

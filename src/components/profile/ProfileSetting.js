@@ -36,29 +36,6 @@ function ProfileSetting() {
 
     const [nickname, setNickname] = useState('');
 
-    const handleConfirmation = async () => {
-        try {
-            const response = await fetch('http://localhost:8080/user/info/add', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({
-                    nickname: nickname,
-                }),
-            });
-    
-            if (!response.ok) {
-                throw new Error('Failed to add user information');
-            }
-    
-            const responseData = await response.json();
-            console.log(responseData);
-        } catch (error) {
-            console.log(error);
-        }
-    };
-
     return (
         <>
             <Header text={'프로필 설정'} />
@@ -99,7 +76,7 @@ function ProfileSetting() {
 
                 <Link to="/home" style={{ display: 'flex', textDecoration: 'none', color: 'black', width: '100%', justifyContent: 'center', alignItems: 'center' }}>
                     <div className={style['buttonContainer']}>
-                        <button onClick={handleConfirmation}>확인</button>
+                        <button>확인</button>
                     </div>
                 </Link>
             </div>
