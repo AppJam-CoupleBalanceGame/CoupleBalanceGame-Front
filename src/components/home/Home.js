@@ -4,6 +4,7 @@ import style from '../../styles/home/Home.module.css';
 import CoinBar from '../../components/common/Coin-Bar';
 import Nav from '../../components/nav/Nav';
 import { MdOutlineAccessTimeFilled } from "react-icons/md";
+import { Link } from 'react-router-dom';
 
 function Home() {
     const [remainingMinutes, setRemainingMinutes] = useState('');
@@ -39,7 +40,7 @@ function Home() {
 
     return (
         <div className={style['container']}>
-            <CoinBar text={(350)} />
+            <Link to='/point' style={{textDecoration: 'none', color: 'black'}}><CoinBar text={(350)} /></Link>
             <div className={style['title']}>
                 <MdOutlineAccessTimeFilled className={style['watch']} />
                 <p>다음 퀴즈까지 <span className={style['time']}>{String(remainingMinutes).padStart(2, '0')}:{String(remainingSeconds).padStart(2, '0')}</span></p>
