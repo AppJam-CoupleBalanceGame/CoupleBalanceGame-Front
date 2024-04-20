@@ -11,9 +11,9 @@ function BalanceGameBefore() {
         <div className={style['container']}>
             <p className={style['title']}>이전 내용</p>
             <div className={style['box']}>
-                <Link to="/balance-game-3" style={{textDecoration: 'none', color: 'black'}}><ButtonGray text={('#3 선호하는 모험 유형은?')} /></Link>
-                <Link to="/balance-game-2" style={{textDecoration: 'none', color: 'black'}}><ButtonGray text={('#2 선호하는 식당모험 유형은?')} /></Link>
-                <Link to="/balance-game-1" style={{textDecoration: 'none', color: 'black'}}><ButtonGray text={('#1 배우고 싶은 새로운 취미는?')} /></Link>
+                <ButtonGray text={('#3 선호하는 모험 유형은?')} />
+                <ButtonGray text={('#2 선호하는 식당모험 유형은?')} />
+                <Link to="/balance-game-num" style={{textDecoration: 'none', color: 'black'}}><ButtonGray text={('#1 배우고 싶은 새로운 취미는?')} /></Link>
             </div>
             <Nav />
         </div>
